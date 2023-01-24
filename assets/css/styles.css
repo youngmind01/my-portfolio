@@ -910,7 +910,7 @@ body.light-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 320px) {
       .nav_menu{
         padding: 1rem 1.5rem;
       }
