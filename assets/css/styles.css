@@ -260,7 +260,7 @@ body.light-theme{
 .nav_menu{
   position: fixed;
   bottom: 1rem;
-  background-color: rgba(220, 220, 220, 0.158);
+  background-color: rgba(65, 64, 64, 0.158);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
@@ -379,7 +379,6 @@ body.light-theme{
   display: flex;
   font-size: 1rem;
   transition: .4s;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .home_social-link:hover{
@@ -954,6 +953,16 @@ body.light-theme{
         column-gap: .25rem;
       }
     }
+
+@media screen and (max-width: 378px) {
+      .nav_menu{
+        padding: 1rem 1.5rem;
+      }
+
+      .home_buttons{
+        flex-direction: column;
+      }
+}
 /* For medium devices */
 @media screen and ( min-width: 576px ) {
   .nav_menu{
