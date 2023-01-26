@@ -482,7 +482,7 @@ body.light-theme{
 }
 
 .about_description{
-  text-align: left;
+  text-align: justify;
   width: 500px;
 }
 
