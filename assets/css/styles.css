@@ -481,6 +481,9 @@ body.light-theme{
   font-size: var(--tiny-font-size);
 }
 
+.about_description{
+  text: left;
+}
 
 /*=============== SKILLS ===============*/
 .skills_container{
