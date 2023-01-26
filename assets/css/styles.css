@@ -482,7 +482,7 @@ body.light-theme{
 }
 
 .about_description{
-  text: left;
+  text-align: left;
 }
 
 /*=============== SKILLS ===============*/
