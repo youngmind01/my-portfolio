@@ -481,10 +481,6 @@ body.light-theme{
   font-size: var(--tiny-font-size);
 }
 
-.about_description{
-  text-align: justify;
-  width: 30vw;
-}
 
 /*=============== SKILLS ===============*/
 .skills_container{
