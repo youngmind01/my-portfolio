@@ -447,9 +447,9 @@ body.light-theme{
   width: 190px;
   border-radius: 1.5rem;
   justify-self: center;
-  #background: linear-gradient(180deg, rgba(115,115,120,1) 6%, rgba(72,77,92,1) 44%, rgba(9,20,50,1) 100%);
+  / * background: linear-gradient(180deg, rgba(115,115,120,1) 6%, rgba(72,77,92,1) 44%, rgba(9,20,50,1) 100%);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  filter: brightness(95%);
+  filter: brightness(95%); */
 }
 
 .about_data{
