@@ -441,10 +441,12 @@ body.light-theme{
 }
 
 .about_img{
-  width: 190px;
+  width: 250px;
   border-radius: 1.5rem;
   justify-self: center;
-  background: linear-gradient(180deg, rgba(115,115,120,1) 6%, rgba(72,77,92,1) 44%, rgba(9,20,50,1) 100%);
+  background: linear-gradient(180deg, 
+            hsla(var(--first-hue), var(--sat), var(--lig), 1),
+            hsla(var(--first-hue), var(--sat), var(--lig), .2)
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   filter: brightness(95%);
 }
