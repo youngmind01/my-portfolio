@@ -681,6 +681,8 @@ body.light-theme{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
+  text-align: center;
+  color: rgb(132, 169, 216);
 }
 
 .work_button{
