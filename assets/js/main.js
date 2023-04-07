@@ -139,3 +139,36 @@ sr.reveal(`.home_data`)
 sr.reveal(`.home_handle`, {delay: 700})
 sr.reveal(`.home_social, .home_scroll`, {delay: 900, origin: 'bottom'})
 
+
+
+// JavaScript code
+const typingTexts = ["Hello, world!", "I am a JavaScript program!", "This is an example of typing animation."]; // array of texts to be typed
+const typingSpeed = 50; // typing speed in milliseconds
+const typingDelay = 1000; // delay before typing starts in milliseconds
+const loopDelay = 3000; // delay between loops in milliseconds
+
+const typingElement = document.getElementById("typing-text"); // get the HTML element
+
+let currentIndex = 0; // initialize current index
+
+function typeText() {
+  const typingText = typingTexts[currentIndex]; // get current text
+  let i = 0; // initialize character index
+  const typingInterval = setInterval(() => {
+    // set interval to update text content
+    typingElement.textContent += typingText.charAt(i); // append next character
+    i++;
+    if (i >= typingText.length) {
+      // stop interval when all characters have been typed
+      clearInterval(typingInterval);
+      setTimeout(() => {
+        // set delay before starting next loop
+        typingElement.textContent = ""; // clear text content
+        currentIndex = (currentIndex + 1) % typingTexts.length; // set next index
+        setTimeout(typeText, loopDelay); // start next loop
+      }, loopDelay);
+    }
+  }, typingSpeed);
+}
+
+setTimeout(typeText, typingDelay); // start typing after delay
